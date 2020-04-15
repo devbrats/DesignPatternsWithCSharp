@@ -1,4 +1,5 @@
-﻿using DesignPatterns_Tutorial.Mediator_Pattern;
+﻿using DesignPatterns_Tutorial.Factory_Pattern;
+using DesignPatterns_Tutorial.Mediator_Pattern;
 
 namespace DesignPatterns_Tutorial
 {
@@ -6,14 +7,8 @@ namespace DesignPatterns_Tutorial
     {
         static void Main(string[] args)
         {
-            //Demo demo = new SingletonPatternDemo();
-            //demo.Show();
-            //var demo = new BuilderPatternDemo();
-            //demo.Show();
-//            var demo = new AdapterPatternDemo();
-//            demo.Show();
-            var mediatorDemo = new MediatorDemo();
-            mediatorDemo.ShowDemo();
+            var demo = new FactoryPatternDemo();
+            demo.Show();
 
         }
     }

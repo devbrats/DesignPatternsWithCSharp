@@ -3,7 +3,7 @@ using System.Text;
 
 namespace DesignPatterns_Tutorial.Builder_Pattern
 {
-    public class BuilderPatternDemo:Demo
+    public class BuilderPatternDemo:DesignPatternDemo
     {
         public override void Show()
         {

@@ -1,9 +1,13 @@
-﻿namespace DesignPatterns_Tutorial.Adapter_Pattern
+﻿using System;
+
+namespace DesignPatterns_Tutorial.Adapter_Pattern
 {
-    public class AdapterPatternDemo : Demo
+    public class AdapterPatternDemo : DesignPatternDemo
     {
         public override void Show()
         {
+            Console.WriteLine("Adapter pattern demo.");
+            Console.WriteLine("Mobile to adapt different chargers...");
             var usbAdaptor = new UsbAdaptor(new UsbCharger());
             var mobile = new Mobile(usbAdaptor);
             mobile.Charge();

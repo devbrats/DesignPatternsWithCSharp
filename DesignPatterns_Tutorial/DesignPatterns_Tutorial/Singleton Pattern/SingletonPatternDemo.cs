@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace DesignPatterns_Tutorial.Singleton_Pattern
 {
-    public class SingletonPatternDemo : Demo
+    public class SingletonPatternDemo : DesignPatternDemo
     {
         public override void Show()
         {

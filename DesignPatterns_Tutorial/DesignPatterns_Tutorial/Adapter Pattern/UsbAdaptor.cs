@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_Tutorial.Adapter_Pattern
+﻿using System;
+
+namespace DesignPatterns_Tutorial.Adapter_Pattern
 {
     public class UsbAdaptor : IChargeAdaptor
     {
@@ -6,6 +8,7 @@
 
         public UsbAdaptor(UsbCharger usbCharger)
         {
+            Console.WriteLine("Usb adaptor is created.");
             _usbCharger = usbCharger;
         }
 

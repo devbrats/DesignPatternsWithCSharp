@@ -1,4 +1,6 @@
-﻿namespace DesignPatterns_Tutorial.Adapter_Pattern
+﻿using System;
+
+namespace DesignPatterns_Tutorial.Adapter_Pattern
 {
     public class PinAdaptor : IChargeAdaptor
     {
@@ -6,6 +8,7 @@
 
         public PinAdaptor(PinCharger pinCharger)
         {
+            Console.WriteLine("Pin adaptor is created.");
             _pinCharger = pinCharger;
         }
 

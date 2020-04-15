@@ -1,8 +1,8 @@
 ﻿namespace DesignPatterns_Tutorial.Mediator_Pattern
 {
-    public class MediatorDemo
+    public class MediatorPatternDemo: DesignPatternDemo
     {
-        public void ShowDemo()
+        public override void Show()
         {
             Mediator mediator = new Mediator();
             var user1 = new User1(mediator);
