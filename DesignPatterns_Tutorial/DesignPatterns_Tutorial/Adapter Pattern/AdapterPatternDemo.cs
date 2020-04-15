@@ -5,8 +5,10 @@
         public override void Show()
         {
             var usbAdaptor = new UsbAdaptor(new UsbCharger());
+            var mobile = new Mobile(usbAdaptor);
+            mobile.Charge();
             var pinAdaptor = new PinAdaptor(new PinCharger());
-            var mobile = new Mobile(pinAdaptor);
+            mobile = new Mobile(pinAdaptor);
             mobile.Charge();
         }
     }

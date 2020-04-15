@@ -2,11 +2,11 @@
 
 namespace DesignPatterns_Tutorial.Adapter_Pattern
 {
-    public class UsbCharger
+    public class PinCharger
     {
-        public void Charge()
+        public void ChargeThroughPin()
         {
-            Console.WriteLine("Using USB Charger...");
+            Console.WriteLine("Using Pin Charger...");
             Console.WriteLine("Charging...");
         }
     }

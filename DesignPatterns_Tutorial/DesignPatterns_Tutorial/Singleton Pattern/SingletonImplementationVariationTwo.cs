@@ -2,17 +2,17 @@
 
 namespace DesignPatterns_Tutorial.Singleton_Pattern
 {
-    public class SingletonImplementation_2
+    public class SingletonImplementationVariationTwo
     {
-        private static SingletonImplementation_2 _instance;
-        public static SingletonImplementation_2 Instance => _instance ?? (_instance = new SingletonImplementation_2());
+        private static SingletonImplementationVariationTwo _instance;
+        public static SingletonImplementationVariationTwo Instance => _instance ?? (_instance = new SingletonImplementationVariationTwo());
 
         public string PatternName { get; set; }
         public string PatternType { get; set; }
 
-        private SingletonImplementation_2()
+        private SingletonImplementationVariationTwo()
         {
-            PatternName = "SingletonImplementation_2";
+            PatternName = "SingletonImplementationVariationTwo";
             PatternType = "Creational";
         }
 

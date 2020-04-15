@@ -2,16 +2,16 @@
 {
     public class Mobile
     {
-        public IAdaptor Adaptor { get; set; }
+        public IChargeAdaptor ChargeAdaptor { get; set; }
 
-        public Mobile(IAdaptor adaptor)
+        public Mobile(IChargeAdaptor chargeAdaptor)
         {
-            Adaptor = adaptor;
+            ChargeAdaptor = chargeAdaptor;
         }
 
         public void Charge()
         {
-            Adaptor.ChargeMobile();
+            ChargeAdaptor.ChargeMobile();
         }
     }
 }

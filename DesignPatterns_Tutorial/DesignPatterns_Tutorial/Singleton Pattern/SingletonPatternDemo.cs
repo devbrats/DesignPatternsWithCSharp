@@ -9,8 +9,8 @@ namespace DesignPatterns_Tutorial.Singleton_Pattern
         {
             Console.WriteLine("Singleton Pattern: ");
             Console.WriteLine();
-            SingletonImplementation_1.Instance.Show();
-            SingletonImplementation_2.Instance.Show();
+            SingletonImplementationVariationOne.Instance.Show();
+            SingletonImplementationVariationTwo.Instance.Show();
             SingletonThreadSafeImplementation.Instance.Show();
         }
     }

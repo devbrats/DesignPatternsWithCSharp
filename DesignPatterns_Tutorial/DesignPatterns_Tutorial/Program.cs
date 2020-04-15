@@ -1,7 +1,4 @@
-﻿using System;
-using DesignPatterns_Tutorial.Adapter_Pattern;
-using DesignPatterns_Tutorial.Builder_Pattern;
-using DesignPatterns_Tutorial.Singleton_Pattern;
+﻿using DesignPatterns_Tutorial.Mediator_Pattern;
 
 namespace DesignPatterns_Tutorial
 {
@@ -13,8 +10,10 @@ namespace DesignPatterns_Tutorial
             //demo.Show();
             //var demo = new BuilderPatternDemo();
             //demo.Show();
-            var demo = new AdapterPatternDemo();
-            demo.Show();
+//            var demo = new AdapterPatternDemo();
+//            demo.Show();
+            var mediatorDemo = new MediatorDemo();
+            mediatorDemo.ShowDemo();
 
         }
     }
