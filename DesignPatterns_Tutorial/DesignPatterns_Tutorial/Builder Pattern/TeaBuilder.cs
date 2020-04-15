@@ -2,39 +2,23 @@
 
 namespace DesignPatterns_Tutorial.Builder_Pattern
 {
-    public static class TeaBuilder
+    public  class TeaBuilder
     {
-        public static Tea PreapareTea()
+        private readonly Tea _tea;
+
+        public TeaBuilder()
         {
-            return new Tea();
+            _tea =  new Tea();
         }
 
-        public static Tea AddMilk(this Tea tea)
+        public Tea PrepareTea()
         {
-            Console.WriteLine("Milk is added.");
-            return tea;
-        }
-
-        public static Tea AddWater(this Tea tea)
-        {
-            Console.WriteLine("Water is added.");
-            return tea;
-        }
-        public static Tea AddTeaLeaf(this Tea tea)
-        {
-            Console.WriteLine("TeaLeaf is added.");
-            return tea;
-        }
-        public static Tea AddSugar(this Tea tea)
-        {
-            Console.WriteLine("Sugar is added.");
-            return tea;
-        }
-
-        public static Tea Boil(this Tea tea)
-        {
+            _tea.AddIngredient("Water");
+            _tea.AddIngredient("Milk");
+            _tea.AddIngredient("Tea Leaf");
+            _tea.AddIngredient("Sugar");
             Console.WriteLine("Tea is prepared !");
-            return tea;
+            return _tea;
         }
     }
 }

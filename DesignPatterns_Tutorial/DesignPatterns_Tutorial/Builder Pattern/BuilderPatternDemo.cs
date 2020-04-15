@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
 namespace DesignPatterns_Tutorial.Builder_Pattern
 {
@@ -7,7 +6,22 @@ namespace DesignPatterns_Tutorial.Builder_Pattern
     {
         public override void Show()
         {
-            var tea =TeaBuilder.PreapareTea().AddMilk().AddWater().AddTeaLeaf().AddSugar().Boil();
+            Console.WriteLine("***Builder Pattern Demo***");
+            Console.WriteLine("Building tea adding different ingredients...");
+            var teaBuilder = new TeaBuilder();
+            var tea = teaBuilder.PrepareTea();
+            tea.ServeTea();
+
+            Console.WriteLine("*********************");
+            Console.WriteLine("Building tea using fluent builder...");
+            var teaUsingFluentBuilder = new FluentTeaBuilder()
+                .AddWater()
+                .AddMilk()
+                .AddTeaLeaf()
+                .AddSugar()
+                .Boil()
+                .GetTea();
+            teaUsingFluentBuilder.ServeTea();
         }
     }
 }

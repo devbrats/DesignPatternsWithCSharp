@@ -6,7 +6,7 @@ namespace DesignPatterns_Tutorial.Adapter_Pattern
     {
         public override void Show()
         {
-            Console.WriteLine("Adapter pattern demo.");
+            Console.WriteLine("***Adapter Pattern Demo***");
             Console.WriteLine("Mobile to adapt different chargers...");
             var usbAdaptor = new UsbAdaptor(new UsbCharger());
             var mobile = new Mobile(usbAdaptor);
