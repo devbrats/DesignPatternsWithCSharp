@@ -1,5 +1,5 @@
-﻿using DesignPatterns_Tutorial.Factory_Pattern;
-using DesignPatterns_Tutorial.Mediator_Pattern;
+﻿using System;
+using DesignPatterns_Tutorial.Factory_Pattern;
 
 namespace DesignPatterns_Tutorial
 {
@@ -9,6 +9,7 @@ namespace DesignPatterns_Tutorial
         {
             var demo = new FactoryPatternDemo();
             demo.Show();
+            Console.WriteLine("\nNote: To get the actual implementation details explore the Show() method and respective folders in the code.");
 
         }
     }
