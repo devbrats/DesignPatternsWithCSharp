@@ -32,8 +32,9 @@ namespace DesignPatterns.Factory_Pattern
             Console.WriteLine("Available Demo:");
             Console.WriteLine("1. Adapter Pattern");
             Console.WriteLine("2. Builder Pattern");
-            Console.WriteLine("2. MediatorPattern");
-            Console.WriteLine("2. SingletonPattern");
+            Console.WriteLine("3. Mediator Pattern");
+            Console.WriteLine("4. Singleton Pattern");
+            Console.WriteLine("Others. Factory Pattern");
             Console.Write("Please Enter your choice for the demo type : ");
         }
     }
