@@ -2,6 +2,9 @@
 
 namespace DesignPatterns.Adapter_Pattern
 {
+    /// <summary>
+    /// Usb based mobile Charger.
+    /// </summary>
     public class UsbCharger
     {
         public void Charge()

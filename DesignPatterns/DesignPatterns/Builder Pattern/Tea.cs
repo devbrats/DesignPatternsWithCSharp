@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Builder_Pattern
 {
+    /// <summary>
+    /// Tea class.
+    /// </summary>
     public class Tea
     {
         private readonly List<string> _ingredients;

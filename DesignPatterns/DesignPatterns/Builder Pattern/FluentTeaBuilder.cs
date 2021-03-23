@@ -2,6 +2,9 @@
 
 namespace DesignPatterns.Builder_Pattern
 {
+    /// <summary>
+    /// Builder using Extension Methods.
+    /// </summary>
     public class FluentTeaBuilder
     {
         private readonly Tea _tea;
