@@ -5,10 +5,10 @@
         public override void Show()
         {
             Mediator mediator = new Mediator();
-            var user1 = new User1(mediator);
-            var user2 = new User2(mediator);
-            var user3 = new User3(mediator);
-            user1.SendMessage("Hi");
+            var userOne = new User("John",mediator);
+            var userTwo = new User("Brian",mediator);
+            var userThree = new User("Martin",mediator);
+            userOne.SendMessage("Hi");
         }
     }
 }
